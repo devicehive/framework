@@ -1,0 +1,27 @@
+[submodule ".net"]
+	path = .net
+	url = https://github.com/devicehive/devicehive-.net
+[submodule "ios"]
+	path = ios
+	url = https://github.com/devicehive/devicehive-ios.git
+[submodule "cpp"]
+	path = cpp
+	url = https://github.com/devicehive/devicehive-cpp.git
+[submodule "android"]
+	path = android
+	url = https://github.com/devicehive/devicehive-android.git
+[submodule "admin-console"]
+	path = admin-console
+	url = https://github.com/devicehive/devicehive-admin-console.git
+[submodule "javascript"]
+	path = javascript
+	url = https://github.com/devicehive/devicehive-javascript.git
+[submodule "uc"]
+	path = uc
+	url = https://github.com/devicehive/devicehive-uc.git
+[submodule ".net-mf"]
+	path = .net-mf
+	url = https://github.com/devicehive/devicehive-.net-mf.git
+[submodule "python"]
+	path = python
+	url = https://github.com/devicehive/devicehive-python.git
