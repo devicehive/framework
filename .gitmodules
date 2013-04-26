@@ -25,3 +25,9 @@
 [submodule "python"]
 	path = python
 	url = https://github.com/devicehive/devicehive-python.git
+[submodule "arduino"]
+	path = arduino
+	url = https://github.com/devicehive/devicehive-arduino.git
+[submodule "j2me"]
+	path = j2me
+	url = https://github.com/devicehive/devicehive-j2me.git
