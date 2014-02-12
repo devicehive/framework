@@ -1,0 +1,102 @@
+<html>
+<head>
+	<title>SetUp WiFi</title>
+	<style>
+		body {
+			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+			font-weight: 300;
+		}
+
+		label {
+			width: 115px;
+			display: inline-block;
+		}
+
+		label, input {
+			margin: 10px 0;
+		}
+
+		select {
+			width: 154px;
+		}
+
+		fieldset {
+			margin: 0 auto;
+			width: 280px;
+			padding-top: 15px;
+		}
+
+		legend {
+			margin: 0 auto;
+			font-size: 20px;
+		}
+
+		#submit-button {
+			display:block;
+			width: 150px;
+			height: 30px;
+			margin: 20px auto 10px auto;
+		}
+	</style>
+</head>
+<body>
+	<form method="GET">
+		<fieldset>
+			<legend>Setup WiFi</legend>
+			<label for="networkName">Network Name:</label>
+			<select id="networkName" name="networkName" >
+			<!--CHANGE-->
+			</select>
+			<label for="encryptionType">Encryption Type</label>
+			<select id="encryptionType" name="encryptionType">
+				<option>NONE</option>
+				<option>WPA</option>
+				<option>WEP</option>
+			</select>
+			<label for="key">Key:</label>
+			<input type="text" id="key" name="key" />
+			
+			<input type="submit" id="submit-button" value="Submit" onclick="return validateForm()"/>
+		</fieldset>
+	</form>
+	
+	<script type="text/javascript">
+		var networkName = document.getElementById('networkName'),
+			    encryptionType = document.getElementById('encryptionType'),
+			    key = document.getElementById('key');
+
+		encryptionType.onchange = function() {
+			if (encryptionType.value === 'NONE') {
+				var disabled = document.createAttribute('disabled');
+				key.setAttributeNode(disabled);
+			} else {
+				key.removeAttribute('disabled');
+			}
+		}
+
+		var evt = document.createEvent("HTMLEvents");
+		evt.initEvent("change", false, true);
+		encryptionType.dispatchEvent(evt);
+
+		var validateForm = function() {
+			var networkNameVal = networkName.value,
+			    encryptionTypeVal = encryptionType.value,
+			    keyValue = key.value;
+
+			var validated = true;
+
+			if (!networkNameVal) {
+				alert('Network Name must be specified!');
+				validated = false;
+			}
+
+			if (encryptionTypeVal !== "NONE" && !keyValue) {
+				alert('Key must be specified!')
+				validated = false;
+			}
+
+			return validated;
+		}
+	</script>
+</body>
+</html>
