@@ -1,0 +1,5 @@
+dependencies:
+
+1. wireless tools (http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/Tools.html)
+2. mongoose server (https://code.google.com/p/mongoose/)
+3. mongocpp (http://code.google.com/r/vpiotr-mongoose-cpp/)
