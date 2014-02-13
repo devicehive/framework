@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name" >GlassMoodLamp</string>
+    <string name="stopwatch">GlassMoodLamp</string>
+    
+    <string name="light_off">Tap to Light Off</string><string name="light_on">Tap to Light On</string>
+
+</resources>
