@@ -1,6 +1,3 @@
-[submodule ".net"]
-	path = .net
-	url = https://github.com/devicehive/devicehive-.net
 [submodule "ios"]
 	path = ios
 	url = https://github.com/devicehive/devicehive-ios.git
@@ -19,9 +16,6 @@
 [submodule "uc"]
 	path = uc
 	url = https://github.com/devicehive/devicehive-uc.git
-[submodule ".net-mf"]
-	path = .net-mf
-	url = https://github.com/devicehive/devicehive-.net-mf.git
 [submodule "python"]
 	path = python
 	url = https://github.com/devicehive/devicehive-python.git
@@ -31,3 +25,9 @@
 [submodule "j2me"]
 	path = j2me
 	url = https://github.com/devicehive/devicehive-j2me.git
+[submodule "net"]
+	path = net
+	url = https://github.com/devicehive/devicehive-.net.git
+[submodule "net-mf"]
+	path = net-mf
+	url = https://github.com/devicehive/devicehive-.net-mf.git
