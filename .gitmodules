@@ -31,3 +31,6 @@
 [submodule "net-mf"]
 	path = net-mf
 	url = https://github.com/devicehive/devicehive-.net-mf.git
+[submodule "java"]
+	path = java
+	url = https://github.com/devicehive/devicehive-java.git
