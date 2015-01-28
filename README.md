@@ -26,4 +26,4 @@ is included. This also means you don't have to contribute the end product or
 modified sources back to Open Source, but if you feel like sharing, you are
 highly encouraged to do so!
 
-© Copyright 2012 DataArt Apps · All Rights Reserved
+© Copyright 2015 DataArt Apps · All Rights Reserved
